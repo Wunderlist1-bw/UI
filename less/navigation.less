@@ -1,0 +1,37 @@
+nav{
+	border-bottom:2px dashed #C0C0C0;
+	position:sticky;
+	top:0;
+	width:100%;
+	background: #FFF;
+	.nav-content{
+		max-width: 800px;
+	    width: 100%;
+	    margin: 0 auto;
+	    .flex-props(nowrap, space-between, start);
+	    @media @mobile {
+	    	.flex-props(wrap, center, center);
+	    	text-align: center;
+	    }
+		h1{
+			padding-top:2rem;
+			padding-bottom:2rem;
+		    @media @mobile {
+		    	padding-bottom:0;
+		    }			
+		}
+		ul{
+			.flex-props(nowrap, space-between, start);
+			li{
+				margin-right:4em;
+				a{
+					display:block;
+					padding-top: 3rem;
+				    @media @mobile {
+				    	padding-top: 1rem;
+				    }						
+				}
+			}
+		}
+	}
+}
