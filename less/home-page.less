@@ -1,0 +1,121 @@
+.home {
+
+  .content-section {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media @mobile{
+      //.flex-props();
+    }
+
+    &.header-section{
+      margin-top:0;
+      padding-bottom:10px;
+      border-bottom:2px dashed #C0C0C0;
+      .img-content{
+        width:100%;
+        padding-left:0;
+        margin-bottom:20px;
+        img{
+          border-radius:0 0 0 0;
+        }
+      }
+      h2{
+
+      }
+      p{
+
+      }
+    }
+    
+    .text-content {
+      width: 48%;
+      padding-right: 1%;
+      @media @mobile{
+        width:100%;
+      }      
+    }
+
+    .img-content {
+      width: 48%;
+      padding-left: 1%;
+      @media @mobile{
+        width:100%;
+        img{
+          width:100%;
+        }
+      }
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .inverse-content {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      flex-wrap: wrap-reverse;
+    }
+    .text-content {
+      padding-left: 1%;
+      padding-right: 0;
+    }
+
+    .img-content {
+      padding-right: 1%;
+      padding-left: 0;
+    }
+  }
+
+  .content-destination {
+    width: 75%;
+    margin: 0 auto 30px;
+
+    img {
+      border-radius: 10px;
+    }
+
+    @media @mobile{
+      width:100%;
+    }
+  }
+
+  .content-pick {
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
+    display: flex;
+    justify-content: space-between;
+    @media @mobile{
+      flex-wrap: wrap;
+    }
+    .destination {
+      width: 30%;
+      margin-bottom: 30px;
+      @media @mobile{
+        width:100%;
+        padding-left:40px;
+        padding-right:40px;
+        .btn{
+          background: #17a2b8!important;
+          width:100%;
+        }
+      }
+      .btn{
+        .btn-props(#008080, 16px, center, inline-block, 14px 60px, 12px, 1px solid #c0c0c0);
+        &:hover{
+
+          .keyframes(btn-hover;{
+            0% { transform: translateY(0px) scale(1.0); }
+            50% { transform: translateY(1px) scale(1.02); }
+            100% { transform: translateY(0px) scale(0.98); }
+            });
+
+          .animation(btn-hover 1.5s linear infinite alternate);            
+        }      
+      }
+    }
+  }
+}// home
