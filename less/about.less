@@ -3,6 +3,9 @@ div.container.about{
     flex-direction: column;
     .content_section{
         display:flex;
+        @media @mobile{
+            flex-direction: column-reverse;
+        }
         &.hero_section{
             padding-top:70px;
             display:flex;
@@ -14,14 +17,22 @@ div.container.about{
                 text-align:left;
                 padding-left:6rem;
                 padding-right: 2rem;
-                h1{
-                    
-                }
                 width:calc(100% - 750px);
                 max-width:450px;
+                @media @mobile{
+                    width:100%;
+                    max-width:100%;
+                    padding-top:0;
+                    padding:0 6rem 9rem 6rem;
+                    margin-top:-4rem;
+                    text-align: center;;
+                }
             }
             .img_content{
                 flex: 1;
+                @media @mobile{
+                    width:100%;
+                }
                 img{
                     //width: calc((100vh - 70px) * 1.36481);
                 }
@@ -31,7 +42,14 @@ div.container.about{
             position:relative;
             margin-top:-1px;
             .text_content{
-                //background-color: @light-purple;
+                @media @mobile{
+                    margin-left: 0;
+                    text-align: left;
+                    padding-left: 4rem;
+                    max-width: 330px;
+                    padding-top: 16rem;
+                    padding-bottom: 6rem;                    
+                }
             }
             .img_content{
                 position:absolute;
@@ -67,16 +85,31 @@ div.container.about{
             }
         }
         &#our_mission{
+            @media @mobile{
+                display:flex;
+                flex-direction: column;
+            }
             .text_content{
                 
                 h2{
                     color:@dark-purple;
+                }
+                @media screen {
+                    padding:2rem 4rem 9rem 4rem;
+                    text-align: center;
                 }
             }
             .img_content{
                 padding-top: 9.2rem;
                 width: 50%;
                 padding-right: 10rem;
+                @media @mobile{
+                    padding:9rem 0rem 2rem 0rem!important;
+                    margin:0 auto;
+                    img{
+                        max-width: 100%!important;
+                    }
+                }
                 img{
                     max-width:360px;
                 }
@@ -85,6 +118,9 @@ div.container.about{
         &#founder_message{
             .quote_block{
                 margin-bottom:5rem;
+                @media @mobile{
+                    margin-bottom:3rem;
+                }
             }
             p.sm{
                 margin-top:2.5rem;
@@ -102,9 +138,15 @@ div.container.about{
                 margin:0 auto;
                 max-width:360px;
                 text-align:center;
+                @media @mobile{
+                    max-width:300px;
+                }
             }         
             h1,h2{
                 margin-bottom: 5rem;
+                @media @mobile {
+                    margin-bottom: 3rem;
+                }
             }
             a.btn{
 
@@ -112,6 +154,9 @@ div.container.about{
             p.p-sm-under-btn{
                 margin-top:2.5rem;
             }
+        }
+        .img_content{
+            position: relative;
         }
     }
 }

@@ -25,6 +25,9 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 5.5rem;
+  @media @mobile {
+    font-size:4rem;
+  }
   &.ch{
     color:@shark;
   }
@@ -32,14 +35,23 @@ h1 {
 
 h2 {
   font-size: 5.5rem;
+  @media @mobile {
+    font-size:3.75rem;
+  }  
 }
 
 h3 {
   font-size: 4rem;
+  @media @mobile {
+    font-size:3.3rem;
+  }    
 }
 
 h4 {
   font-size: 2.8rem;
+  @media @mobile{
+    font-size:2.5rem;
+  }
 }
 
 p {
@@ -109,6 +121,21 @@ img {
   background-color:@gray;
 }
 
+/* Global Responsiveness Layout styles */
+
+.show_on_mobile{
+  display:none;
+  @media @mobile{
+    display:flex;
+  }
+}
+
+.hide_on_mobile{
+  @media @mobile{
+    display:none;
+  }
+}
+
 /* Global Layout Component Styles */
 
 section.inner_content_width, div.inner_content_width{
@@ -116,6 +143,10 @@ section.inner_content_width, div.inner_content_width{
   margin:0 auto;
   .text_content-centered{
     text-align:center!important;
+    @media @mobile {
+      padding-left:4rem;
+      padding-right:4rem;
+    }
   }
 }
 
@@ -126,6 +157,13 @@ section.inner_content_width, div.inner_content_width{
   margin-left:auto;
   margin-right:auto;
   position:relative;
+  @media @mobile{
+    max-width: calc(100vw - 20rem);
+    font-size:1.8rem!important;
+    &:before{
+      right: calc(100% + 1rem)!important;
+    }
+  }
   &:before{
     content: '';
     background-image: url(../img/polka-dot-quote@2x.png);
@@ -151,12 +189,28 @@ section.inner_content_width, div.inner_content_width{
   }
 }
 
+.white_fade_bottom{
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, #FFF, transparent);
+}
+
 .call_block{
   text-align:center;
   padding-top:9rem;
   padding-bottom:9rem;
+  @media @mobile{
+    h2{
+      max-width: 330px;
+      margin:0 auto;
+    }
+  }
   > div{
-    width:660px;
+    width:100%;
+    max-width:660px;
     margin-left:auto;
     margin-right:auto;
     margin-top:2rem;
@@ -175,6 +229,11 @@ section.inner_content_width, div.inner_content_width{
         color:@shark;
         margin-right:0.25rem;
         width:calc(100% - 264px - 0.25rem);
+        @media @mobile{
+          width:100%;
+          max-width:300px;
+          margin:0 auto 1rem;
+        }
       }
       a{
         height:62px;
@@ -187,6 +246,11 @@ section.inner_content_width, div.inner_content_width{
           box-shadow:0 0 0 2px #FFF inset;
           background-color:@dark-purple;
         }
+        @media @mobile{
+          width:100%;
+          max-width:300px;
+          margin:0 auto;
+        }        
       }
     }
   }
