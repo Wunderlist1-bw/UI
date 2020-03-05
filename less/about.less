@@ -1,0 +1,162 @@
+div.container.about{
+    display:flex;
+    flex-direction: column;
+    .content_section{
+        display:flex;
+        @media @mobile{
+            flex-direction: column-reverse;
+        }
+        &.hero_section{
+            padding-top:70px;
+            display:flex;
+            align-items: center;
+            justify-items: self-end;
+            justify-content: space-between;
+            align-items: stretch;
+            .text_content{
+                text-align:left;
+                padding-left:6rem;
+                padding-right: 2rem;
+                width:calc(100% - 750px);
+                max-width:450px;
+                @media @mobile{
+                    width:100%;
+                    max-width:100%;
+                    padding-top:0;
+                    padding:0 6rem 9rem 6rem;
+                    margin-top:-4rem;
+                    text-align: center;;
+                }
+            }
+            .img_content{
+                flex: 1;
+                @media @mobile{
+                    width:100%;
+                }
+                img{
+                    //width: calc((100vh - 70px) * 1.36481);
+                }
+            }
+        }
+        &#endless_optimization{
+            position:relative;
+            margin-top:-1px;
+            .text_content{
+                @media @mobile{
+                    margin-left: 0;
+                    text-align: left;
+                    padding-left: 4rem;
+                    max-width: 330px;
+                    padding-top: 16rem;
+                    padding-bottom: 6rem;                    
+                }
+            }
+            .img_content{
+                position:absolute;
+                height:100%;
+                .bg_sprite{
+                    height:100%;
+                    display: inline-block;
+                    background-size:contain;
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    &.easier{
+                        width:35vw;
+                        margin-left:-50px;
+                        @media @mobile{
+                            margin-left:-10px;
+                        }
+                    }
+                    &.smarter-faster{
+                        width:25vw;
+                        background-size:cover;
+                    }
+                }
+                &.left{
+                    left:0;
+                    @media @mobile{
+                        top: 0;
+                        height: 140px;
+                    }
+                }
+                &.right{
+                    right:0;
+                }
+            }
+        }
+        &#our_mission{
+            @media @mobile{
+                display:flex;
+                flex-direction: column;
+            }
+            .text_content{
+                
+                h2{
+                    color:@dark-purple;
+                }
+                @media screen {
+                    padding:2rem 4rem 9rem 4rem;
+                    text-align: center;
+                }
+            }
+            .img_content{
+                padding-top: 9.2rem;
+                width: 50%;
+                padding-right: 10rem;
+                @media @mobile{
+                    padding:9rem 0rem 2rem 0rem!important;
+                    margin:0 auto;
+                    img{
+                        max-width: 100%!important;
+                    }
+                }
+                img{
+                    max-width:360px;
+                }
+            }
+        }
+        &#founder_message{
+            .quote_block{
+                margin-bottom:5rem;
+                @media @mobile{
+                    margin-bottom:3rem;
+                }
+            }
+            p.sm{
+                margin-top:2.5rem;
+            }
+        }
+        .text_content{
+            padding-top:9rem;
+            padding-bottom:9rem; 
+            position:relative;
+            z-index: 2;
+            .blck.callout{
+                margin-bottom:3rem;
+            }  
+            &.tc-centered{
+                margin:0 auto;
+                max-width:360px;
+                text-align:center;
+                @media @mobile{
+                    max-width:300px;
+                }
+            }         
+            h1,h2{
+                margin-bottom: 5rem;
+                @media @mobile {
+                    margin-bottom: 3rem;
+                }
+            }
+            a.btn{
+
+            }
+            p.p-sm-under-btn{
+                margin-top:2.5rem;
+            }
+        }
+        .img_content{
+            position: relative;
+        }
+    }
+}
