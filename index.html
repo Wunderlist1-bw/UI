@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WunderList</title>
+  <title>Dash</title>
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <!--[if lt IE 9]>
@@ -13,174 +13,181 @@
 </head>
 
 
-
-<div class="mainmenu">
-  <div class="logoymenu logomenu1">
-    <img class="logo" src="img/assets/dashlogo.png" alt="Company logo.">
-    <a href="#">How it Works</a>
-    <a href="#">Features</a>
-    <a href="#testimonial">Testimonials</a>
-  </div>
-  <div class="logoymenu logomenu2">
-    <div id="login">Login</div>
-  </div>
-
-</div>
-<section class="mainpic">
-  <div class="mainpic1">
-
-    <img src="img/hero-image.png" alt="">
-  </div>
-  <div class="mainpic1">
-    <div class="buttoms1">
-      <input type="text" size="25" maxlength="30" value="Enter your email" name="nombre">
-
-      <a href="#" id="SignUp">GET STARTED - IT'S FREE</a>
-    </div>
-  </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<section class="headline1">
-  <div class="sectionhead1">
-    <h1>Simplify complex workloads</h1>
-    <h3>Working with Dash routines gives you more time to focus on your goals</h3>
-  </div>
-
-</section>
-
-
-
-
-<section class="headline2">
-
-
-  <div class="Step1">
-    
-
-      <!--<img src="img/checks.jpg" alt="step1">-->
-
-    
-    <h3>Record Tasks</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy</p>
-
-  </div>
-
-  <div class="Step1">
-    <h3>Visualize your to-dos</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy</p>
-    <!--<img src="img/checks.jpg" alt="step2">-->
-
-
-  </div>
-
-  <div class="Step1">
-    <h3>Manage your progress</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy</p>
-    <!--<img src="Img/checks.jpg" alt="step3">-->
-  </div>
-
-</section>
-
-<section class="headline3">
-  <div class="sectionhead3">
-    <h1>Filter by due dates</h1>
-    <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-      its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-      opposed to using '</h3>
-    <div class="center1">
-      <nav class="top1">
-        <a href="#">Get Started</a>
-    </div>
-  </div>
-
-  <div class="sectionhead3">
-    <img title="my first memo" class="Headpic" src="img/calendar.jpg" alt="Header Pic">
-
-  </div>
-</section>
-
-
-
-<section class="headline4">
-
-
-  <div class="sectionhead4">
-    <img title="my first memo" class="Headpic" src="img/calendar.jpg" alt="Header Pic">
-
-  </div>
-
-
-  <div class="sectionhead4">
-    <h1>Set recurring taks</h1>
-    <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-      its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-      opposed to using '</h3>
-    <div class="center1">
-      <nav class="top1">
-        <a href="#">Get Started</a>
-    </div>
-  </div>
-
-
-</section>
-
-
-
-
-</section>
-<section class="headline5">
-  <div class="sectionhead5">
-    <h2><a name="testimonial"></a>Featured Customer WONDERY<h2>
-        <h1>"Getting work done is a lot faster with Dash. And in our industry, being faster means you're going to bring
-          a product that's on-trend to market a lot quicker than normal." </h1>
-        <div class="testpic1">
-
-          <img class="testpic" src="img/assets/Image 11.png" width="30%">
-          <p>Senior Product Developer</p>
+<body>
+  <header>
+    <nav class="primary_nav">
+        <div class="nav_content">
+            <logo><a href="index.html"><img src='img/dash-logo@2x.png'></a></logo>
+            <nav class="nav_list">
+                <ul>
+                    <li><a><p class="sm">How it Works</p></a></li>
+                    <li><a><p class="sm">Features</p></a></li>
+                    <li><a><p class="sm">Testimonials</p></a></li>
+                    <li><a href="about.html"><p class="sm">About</p></a></li>
+                </ul>
+                <div class="right">
+                    <a href="https://wunderlistbw.now.sh/" class="btn solid_btn small_btn">Login</a>
+                </div>
+            </nav>
+            <button id="nav_menu_btn" class="nav_menu_btn"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" aria-label="" class="svg-replaced" shape-rendering="geometricPrecision"><path d="M0 0h24v3H0zm0 7h24v3H0zm0 7h24v3H0z" fill-rule="evenodd"></path></svg>
+            </button>
         </div>
-        <p><a href="#top">Go Top</a></p>
+    </nav> 
+    <nav id="main_nav" class="nav_mobile is-hidden">
+        <div class="nav_toolbar a-top">
+            <logo><a><img src='img/dash-logo@2x.png'></a></logo>
+            <button id="nav_close_btn" class="nav_icon a-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-255 347 100 100" width="20" aria-label="Close Navigation" class="svg-replaced" shape-rendering="geometricPrecision"><path d="M-160.4 434.2l-37.2-37.2 37.1-37.1-7-7-37.1 37.1-37.1-37.1-7 7 37.1 37.1-37.2 37.2 7.1 7 37.1-37.2 37.2 37.2"></path></svg>
+            </button>                
+        </div>
+        <div class="nav_scroller">
+            <nav class="nav_list">
+                <ul>
+                    <li><a><p class="sm">How it Works</p></a></li>
+                    <li><a><p class="sm">Features</p></a></li>
+                    <li><a><p class="sm">Testimonials</p></a></li>
+                    <li><a href="about.html"><p class="sm">About</p></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav_button-container">
+            <div class="a-grid">
+                <a href="https://wunderlistbw.now.sh/" class="btn solid_btn lrg_btn">Login</a>
+                <a href="https://wunderlistbw.now.sh/" class="btn solid_btn lrg_btn outline_btn">Get Started</a>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <div class="container home">
+    <section class="content_section hero_section bg-l-purple">
+      <div class="text_content">
+        <h1 class="wh">Who knew to-dos could work like this</h1>
+        <p class="wh">Keep work organized in Dash, the smart alternative to calendars for recurring to-dos.</p>
+      </div>  
+      <div class="img_content img_content-hero_wrapper">
+          <img class="" src="img/hero-image.png">
+          <!--<div class="show_on_mobile white_fade_bottom"></div>-->
+      </div>
+    </section>
+    <section class="content_section hero_call_section">
+      <div class="call_block call_block-w_header bg-d-purple">
+        <div>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <a href="https://wunderlistbw.now.sh/" class="btn solid_btn lrg_btn bg-d-purple">Get Started <span>– It's Free</span></span></a>
+            </form>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="how_it_works" class="flex_col content_section inner_content_width">
+      <div class="text_content text_content-centered">
+        <h3 class="dp">Simplify complex workloads</h3>
+        <p class="ch">Working with Dash routines gives you more time to focus on your goals</p>
+      </div>
+      <div class="three_cols">
+        <div class="step_box">
+          <img class="step" src="img/step-1.png" alt="Step 1!">
+          <h4 class="dp">Record Tasks</h4>
+          <p class="ch">Have a task? Simply throw it on your Dash </p>
+        </div>
+
+        <div class="step_box">
+          <img class="step" src="img/step-2.png" alt="Step 2!">
+          <h4 class="dp">Visualize to-dos</h4>
+          <p class="ch">Clearly see and manage tasks you set to recurring</p>
+          <!--<img src="img/checks.jpg" alt="step2">-->
+        </div>
+
+        <div class="step_box">
+          <img class="step" src="img/step-3.png" alt="Step 3!">
+          <h4 class="dp">Track your progress</h4>
+          <p class="ch">Complete to-dos and hit streaks like never before </p>
+          <!--<img src="Img/checks.jpg" alt="step3">-->
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray content_section" id="features">
+      <div class="inner_content_width">
+        <div class="txt_img_row-centered">
+          <div class="txt_content">
+            <h3 class="dp">Recurring to-dos</h3>
+            <p>Repeat tasks – we all have them – so we made a to-do list for them. </p>
+            <a class="btn solid_btn lrg_btn" href="https://wunderlistbw.now.sh/" href="#">Get Started</a>
+          </div>
+
+          <div class="img_content">
+            <img title="my first memo" class="Headpic" src="img/calendar.jpg" alt="Header Pic">
+
+          </div>
+        </div>
+
+        <div class="txt_img_row-centered txt_img_row-centered-reverse">
+          <div class="img_content">
+            <img title="my first memo" class="Headpic" src="img/calendar.jpg" alt="Header Pic">
+          </div>
+
+
+          <div class="txt_content">
+            <h3 class="dp">Filtered by due dates</h3>
+            <p>We care about keeping Dash intuitively simple. So the only filtering we offer is by date.</p>
+            <a class="btn solid_btn lrg_btn"  href="https://wunderlistbw.now.sh/" href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- <section class="content_section" id="testimonial">
+      <div class="text_content">
+        <p class="blck ch">Featured Customer WONDERY</p>
+        <h4 class="dp quote_block">Getting work done is a lot faster with Dash. And in our industry, being faster means you're going to bring a product that's on-trend to market a lot quicker than normal.</h4>
+        <div class="testpic1">
+          <img class="testpic" src="img/assets/Image 11.png" width="30%">
+          <p class="ch blck">Christopher Newsome</p>
+          <p class="ch sm">Senior Product Developer for Advanced Concepts, Wondery
+          </p>
+        </div>
+      </div>
+
+      <div class="img_content">
+        <img title="Testimonials" class="Headpic" src="img/assets/Image 10.png" width="100%" height="100%" alt="Header Pic">
+      </div>
+
+
+    </section> -->
+
+
+    <section class="call_block call_block-w_header bg-l-purple">
+      <h2>Go with a smarter to-do list</h2>
+      <div>
+          <form>
+              <input type="email" placeholder="Enter your email">
+              <a href="https://wunderlistbw.now.sh/" class="btn solid_btn lrg_btn">Get Started <span>– It's Free</span></span></a>
+          </form>
+      </div>
+    </section>
   </div>
 
-  <div class="sectionhead5">
-    <img title="Testimonials" class="Headpic" src="img/assets/Image 10.png" width="100%" height="100%" alt="Header Pic">
-  </div>
 
 
-</section>
+  <footer class="footer bg-d-purple">
+    <p>Copyright ©2020 Dash, LLC</p>
+  </footer>
 
-
-<div id="container">
-
-
-  <h1>Go with a smarter to-do list</h1>
-  <div class="buttoms">
-
-    <input type="text" size="25" maxlength="30" value="Enter your email" name="nombre">
-
-    <a href="#" id="SignUp">GET STARTED - IT'S FREE</a>
-  </div>
-
-
-</div>
-
-
-
-
-<footer>
-  <div id="foot">
-    <p>Copyright @2020 Dash, LLC</p>
-  </div>
-</footer>
+  <!--Page Scripts-->
+  <script src="js/about.js"></script>
 </div>
 
 </body>

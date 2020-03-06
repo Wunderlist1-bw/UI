@@ -196,6 +196,27 @@ h5 {
   letter-spacing: -0.02em;
   line-height: 1.25;
 }
+h1.wh,
+h2.wh,
+h3.wh,
+h4.wh,
+h5.wh {
+  color: #FFF;
+}
+h1.ch,
+h2.ch,
+h3.ch,
+h4.ch,
+h5.ch {
+  color: #2B3C49;
+}
+h1.dp,
+h2.dp,
+h3.dp,
+h4.dp,
+h5.dp {
+  color: #523FE1;
+}
 h1 {
   font-size: 5.5rem;
 }
@@ -203,9 +224,6 @@ h1 {
   h1 {
     font-size: 4rem;
   }
-}
-h1.ch {
-  color: #2B3C49;
 }
 h2 {
   font-size: 5.5rem;
@@ -234,12 +252,16 @@ h4 {
 p {
   font-size: 1.8rem;
   font-family: 'Circular', Helvetica, Arial, sans-serif;
+  line-height: 1.35;
 }
 p.blck {
   font-weight: 900;
 }
 p.ch {
   color: #2B3C49;
+}
+p.wh {
+  color: #FFF;
 }
 p.sm {
   font-size: 1.5em;
@@ -250,6 +272,9 @@ img {
 }
 .btn {
   cursor: pointer;
+}
+a {
+  text-decoration: none;
 }
 .solid_btn {
   background-color: #6B58FA;
@@ -317,6 +342,7 @@ section.inner_content_width,
 div.inner_content_width {
   max-width: 1100px;
   margin: 0 auto;
+  width: 100%;
 }
 section.inner_content_width .text_content-centered,
 div.inner_content_width .text_content-centered {
@@ -328,6 +354,9 @@ div.inner_content_width .text_content-centered {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+}
+.flex_col {
+  flex-direction: column;
 }
 .quote_block {
   color: #523FE1;
@@ -366,6 +395,32 @@ div.inner_content_width .text_content-centered {
   width: 100%;
   height: 100%;
 }
+.txt_content h3 {
+  margin-bottom: 3rem;
+}
+.three_cols {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 9rem;
+}
+.step_box {
+  border: 2px solid #EDEFF0;
+  display: block;
+  width: 30%;
+  text-align: left;
+  padding: 5rem 3rem 3rem 3rem;
+  position: relative;
+}
+.step_box h4 {
+  padding-bottom: 2rem;
+}
+.step_box > img.step {
+  position: absolute;
+  top: -22px;
+  width: 43px;
+  left: 3rem;
+}
 .white_fade_bottom {
   position: absolute;
   bottom: 0;
@@ -378,6 +433,7 @@ div.inner_content_width .text_content-centered {
   text-align: center;
   padding-top: 9rem;
   padding-bottom: 9rem;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .call_block h2 {
@@ -654,6 +710,128 @@ header .nav_mobile .nav_button-container .a-grid a {
   font-size: 1.5rem;
   padding: 20px;
 }
+div.container.home {
+  display: flex;
+  flex-direction: column;
+}
+div.container.home .content_section {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  div.container.home .content_section {
+    flex-direction: column-reverse;
+  }
+}
+div.container.home .content_section.hero_section {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-items: self-end;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 600px;
+}
+div.container.home .content_section.hero_section .text_content {
+  text-align: left;
+  padding-left: 6rem;
+  padding-right: 2rem;
+  width: calc(100% - 750px);
+  max-width: 400px;
+  align-self: center;
+}
+@media (max-width: 500px) {
+  div.container.home .content_section.hero_section .text_content {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0;
+    padding: 0 6rem 9rem 6rem;
+    margin-top: -4rem;
+    text-align: center;
+  }
+}
+div.container.home .content_section.hero_section .img_content {
+  flex: 1;
+  min-height: 60vh;
+}
+@media (max-width: 500px) {
+  div.container.home .content_section.hero_section .img_content {
+    width: 100%;
+  }
+}
+div.container.home .content_section.hero_section .img_content.img_content-hero_wrapper {
+  text-align: right;
+}
+div.container.home .content_section.hero_section .img_content.img_content-hero_wrapper img {
+  height: 100%;
+  width: auto;
+  max-width: initial;
+}
+div.container.home .content_section.hero_call_section .call_block {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+div.container.home .content_section.hero_call_section .call_block > div {
+  margin-top: 0;
+}
+div.container.home .content_section#features {
+  padding-top: 9rem;
+  padding-bottom: 6rem;
+}
+div.container.home .content_section .txt_img_row-centered {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+div.container.home .content_section .txt_img_row-centered .img_content {
+  margin-right: 0;
+}
+div.container.home .content_section .txt_img_row-centered .txt_content {
+  margin-top: 3rem;
+  max-width: 400px;
+}
+div.container.home .content_section .txt_img_row-centered .txt_content a.btn {
+  margin-top: 3rem;
+}
+div.container.home .content_section .text_content {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  position: relative;
+  z-index: 2;
+}
+div.container.home .content_section .text_content h3 {
+  margin-bottom: 3rem;
+}
+div.container.home .content_section .text_content .blck.callout {
+  margin-bottom: 3rem;
+}
+div.container.home .content_section .text_content.tc-centered {
+  margin: 0 auto;
+  max-width: 360px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  div.container.home .content_section .text_content.tc-centered {
+    max-width: 300px;
+  }
+}
+div.container.home .content_section .text_content h1,
+div.container.home .content_section .text_content h2 {
+  margin-bottom: 5rem;
+}
+@media (max-width: 500px) {
+  div.container.home .content_section .text_content h1,
+  div.container.home .content_section .text_content h2 {
+    margin-bottom: 3rem;
+  }
+}
+div.container.home .content_section .text_content p.p-sm-under-btn {
+  margin-top: 2.5rem;
+}
+div.container.home .content_section .img_content {
+  position: relative;
+}
 @keyframes atena {
   from {
     background-color: #523FE1;
@@ -751,18 +929,6 @@ header .nav_mobile .nav_button-container .a-grid a {
 }
 .top1 {
   text-align: right;
-}
-.top1 a {
-  display: inline-block;
-  border: 1px solid;
-  align-items: flex-end;
-  margin-right: 120px;
-  border-radius: 9px;
-  padding: 10px;
-  text-decoration: none;
-  background-color: #6b58fa;
-  color: white;
-  font-family: circularbold;
 }
 hr {
   height: 10px;
@@ -1032,14 +1198,6 @@ hr {
   }
   .top1 a {
     display: inline-block;
-    border: 1px solid;
-    width: 80px;
-    border-radius: 9px;
-    padding: 20px;
-    text-decoration: none;
-    background-color: #6b58fa;
-    color: white;
-    font-family: circularbold;
   }
   .top1 {
     text-align: center;
@@ -1316,7 +1474,7 @@ div.container.about .content_section#endless_optimization .img_content.right {
 div.container.about .content_section#our_mission .text_content h2 {
   color: #523FE1;
 }
-@media screen {
+@media (max-width: 500px) {
   div.container.about .content_section#our_mission .text_content {
     padding: 2rem 4rem 9rem 4rem;
     text-align: center;
