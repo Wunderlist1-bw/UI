@@ -5,7 +5,7 @@ div.container.home{
     display:flex;
     width:100%;
     @media @mobile{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     &.hero_section{
         padding-top:70px;
@@ -15,25 +15,42 @@ div.container.home{
         justify-content: space-between;
         align-items: stretch;
         height: 600px;
+        @media @tablet{
+          flex-direction: column;
+          height:auto;
+        }
         .text_content{
             text-align:left;
             padding-left:6rem;
             padding-right: 2rem;
             width:calc(100% - 750px);
             max-width:400px;
+            min-width:400px;
             align-self: center;
+            @media @tablet{
+              text-align: center;
+              padding:9rem 6rem 9rem 6rem;
+              max-width:calc(100vw - 8rem);
+            }
             @media @mobile{
                 width:100%;
                 max-width:100%;
                 padding-top:0;
-                padding:0 6rem 9rem 6rem;
+                padding:9rem 6rem 9rem 6rem;
                 margin-top:-4rem;
-                text-align: center;;
             }
         }
         .img_content{
             flex: 1;
             min-height:60vh;
+            @media @tablet{
+              width:100%;
+              min-height:300px;
+              >div{
+                position: absolute;
+
+              }
+            }
             @media @mobile{
                 width:100%;
             }
@@ -62,21 +79,38 @@ div.container.home{
     &#features{
       
       padding-top:9rem;
-      padding-bottom:6rem;      
+      padding-bottom:6rem;   
+      @media @mobile {
+        padding-top:4rem;
+        padding-bottom:4rem;
+      }   
     }
     .txt_img_row-centered{
       display: flex;
       flex-direction: row;   
       margin-bottom:3rem;   
       justify-content: space-between;
+      @media @mobile{
+        flex-direction: column;
+        &:nth-child(even){
+          flex-direction: column-reverse;
+        }
+      }
       .img_content{
         margin-right:0;
       }
       .txt_content{
         margin-top:3rem;
         max-width:400px;
+        @media @mobile{
+          text-align:center;
+        }
         a.btn{
           margin-top:3rem;
+          @media @mobile{
+            margin-bottom:3rem;
+            margin-top:3rem;
+          }
         }
       }
     }
