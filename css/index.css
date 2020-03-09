@@ -220,6 +220,11 @@ h5.dp {
 h1 {
   font-size: 5.5rem;
 }
+@media (max-width: 1180px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
 @media (max-width: 500px) {
   h1 {
     font-size: 4rem;
@@ -227,6 +232,11 @@ h1 {
 }
 h2 {
   font-size: 5.5rem;
+}
+@media (max-width: 1180px) {
+  h2 {
+    font-size: 4.5rem;
+  }
 }
 @media (max-width: 500px) {
   h2 {
@@ -342,7 +352,7 @@ section.inner_content_width,
 div.inner_content_width {
   max-width: 1100px;
   margin: 0 auto;
-  width: 100%;
+  width: calc(100% - 8rem);
 }
 section.inner_content_width .text_content-centered,
 div.inner_content_width .text_content-centered {
@@ -572,7 +582,7 @@ header nav.primary_nav .nav_content .nav_list {
   align-items: center;
   flex: 1;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   header nav.primary_nav .nav_content .nav_list {
     display: none;
   }
@@ -593,6 +603,7 @@ header nav.primary_nav .nav_content .nav_list ul li {
 header nav.primary_nav .nav_content .nav_list ul li a {
   display: block;
   font-weight: 600;
+  color: #2B3C49 !important;
 }
 header nav.primary_nav .nav_content .nav_list div.right {
   margin-left: auto;
@@ -602,7 +613,7 @@ header nav.primary_nav .nav_content button.nav_menu_btn {
   display: none;
   border-radius: 0!important;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   header nav.primary_nav .nav_content button.nav_menu_btn {
     display: block;
   }
@@ -1397,6 +1408,12 @@ div.container.about .content_section.hero_section .text_content {
   width: calc(100% - 750px);
   max-width: 450px;
 }
+@media (max-width: 1180px) {
+  div.container.about .content_section.hero_section .text_content {
+    width: calc(100% - 680px);
+    min-width: 400px;
+  }
+}
 @media (max-width: 500px) {
   div.container.about .content_section.hero_section .text_content {
     width: 100%;
@@ -1465,7 +1482,7 @@ div.container.about .content_section#endless_optimization .img_content.left {
 div.container.about .content_section#endless_optimization .img_content.right {
   right: 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   div.container.about .content_section#our_mission {
     display: flex;
     flex-direction: column;
@@ -1474,7 +1491,7 @@ div.container.about .content_section#endless_optimization .img_content.right {
 div.container.about .content_section#our_mission .text_content h2 {
   color: #523FE1;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   div.container.about .content_section#our_mission .text_content {
     padding: 2rem 4rem 9rem 4rem;
     text-align: center;
@@ -1485,7 +1502,7 @@ div.container.about .content_section#our_mission .img_content {
   width: 50%;
   padding-right: 10rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   div.container.about .content_section#our_mission .img_content {
     padding: 9rem 0rem 2rem 0rem!important;
     margin: 0 auto;

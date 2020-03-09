@@ -19,6 +19,10 @@ div.container.about{
                 padding-right: 2rem;
                 width:calc(100% - 750px);
                 max-width:450px;
+                @media @small-desktop{
+                    width: calc(100% - 680px);
+                    min-width: 400px;
+                }
                 @media @mobile{
                     width:100%;
                     max-width:100%;
@@ -85,7 +89,7 @@ div.container.about{
             }
         }
         &#our_mission{
-            @media @mobile{
+            @media @tablet{
                 display:flex;
                 flex-direction: column;
             }
@@ -94,7 +98,7 @@ div.container.about{
                 h2{
                     color:@dark-purple;
                 }
-                @media @mobile {
+                @media @tablet {
                     padding:2rem 4rem 9rem 4rem;
                     text-align: center;
                 }
@@ -103,7 +107,7 @@ div.container.about{
                 padding-top: 9.2rem;
                 width: 50%;
                 padding-right: 10rem;
-                @media @mobile{
+                @media @tablet{
                     padding:9rem 0rem 2rem 0rem!important;
                     margin:0 auto;
                     img{

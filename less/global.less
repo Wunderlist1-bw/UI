@@ -34,6 +34,9 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 5.5rem;
+  @media @small-desktop{
+    font-size:4.5rem;
+  }
   @media @mobile {
     font-size:4rem;
   }
@@ -41,6 +44,9 @@ h1 {
 
 h2 {
   font-size: 5.5rem;
+  @media @small-desktop{
+    font-size:4.5rem;
+  }  
   @media @mobile {
     font-size:3.75rem;
   }  
@@ -155,7 +161,7 @@ a{
 section.inner_content_width, div.inner_content_width{
   max-width:1100px;
   margin:0 auto;
-  width:100%;
+  width:calc(100% - 8rem);
   .text_content-centered{
     text-align:center!important;
     @media @mobile {
